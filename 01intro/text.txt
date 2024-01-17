@@ -1,0 +1,35 @@
+Extensions> Market Place
+vscode-icons
+Material Icon Theme
+Prettier-Code formatter
+Live server
+
+
+FSD :
+Full Stack development
+MERN Stack
+Full Stack Web development
+
+HTML
+CSS
+JS
+REACTJS
+MONGODB
+NODEJS
+EXPRESS
+
+> Front end engineer
+> BAckend 
+> FULL Stack
+> REACTJS 
+
+WEB development
+> BROWSER
+
+https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+> twitter
+> disable JS > try 
+
+
+
+
