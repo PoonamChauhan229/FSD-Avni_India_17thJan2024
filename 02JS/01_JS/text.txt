@@ -1,0 +1,54 @@
+JS
+>adds life to it
+>u can perform actions using JS
+>Single threaded synnchrounous language
+    > line by line 
+
+    code to execute
+    aaaa
+    uuuu
+    pppp
+    yyyy
+
+
+    no possibility
+    yyyy
+    uuuu
+    aaaa
+
+    code of execution=> line by line , order of execution 
+    aaaa=> 1sec
+    uuuu=> 2min
+    pppp=> 1sec
+    yyyy=> 1sec
+
+> line y line execution in a specific order 
+
+async
+aaaa -1 sec
+async ops => huge=> 1min => in process nt blocking of code 
+uuuu -1 sec
+
+code execute
+aaaa
+uuuu
+async ops
+
+
+with BROWSER
+without BROWSER
+
+
+html:5
+
+
+html css => actions will be performed
+
+html
+css
+JS
+
+
+
+
+
