@@ -82,7 +82,7 @@ console.log(arr[2])
 
 // 
 arr[10]=700
-// from arr[5] to arr[9]=> ?
+// from arr[5] to arr[9]=> ? undefined
 
 
 // property
@@ -94,17 +94,95 @@ console.log(arr.length)
 // loop=> infinit never stops 
 //crash
 //stopping=> condition=> end point
-//initulization=> start point
+//initulization=> start point => array => 0th index
 //increment/decrement=> value increase/decrease
 
 // for(initilaiztion,condition,increment/decrement){
 
 // }
 
+var arr=[78,90,78,67,45]
+// for loop
+//  i=0th index
+// lenght=> lastindex+1
+// 5=> 12345 length
+// i=> 01234 <=arr.length
+//consition=> loop runs?=>
+
+for(var i=0;i<arr.length;i++){
+    console.log(i)
+}
+
+var arr=[78,90,78,67,45]
+
+// [78,91,80,70,49]
+// for loop
+//  i=0th index
+// lenght=> lastindex+1
+// 5=> 12345 length
+// i=> 01234 <=arr.length
+//consition=> loop runs?=>
+
+for(var i=0;i<arr.length;i++){
+    console.log(i+arr[i])
+}
+
+// Table of 2
+// Dynamic=> it should give any number table
+console.log(typeof(arr))
 
 
 // objects
+
+// represents=>{}
+// key:value pair
+// ......n
+
+// student data
+var obj={
+    stu_name:"XYZ",
+    stu_id:1,
+    stu_class:"12th",
+    stu_email:"xyz@gmail.com",
+    "full name":"XYZ text"
+}
+console.log(obj)
+// dot operator:
+console.log(obj.stu_class)
+console.log(obj.stu_email)
+
+// insert
+obj.phone_number=8997654609
+console.log(obj)
+
+obj['parent number']=89898989;
+console.log(obj)
+
+
+
+//upadte
+obj.stu_email="abc@gmail.com"
+console.log(obj)
+
+console.log(obj['full name']="uiopop yuyuy")
+
+
 // trivial
+
+// undefined
+
+var a;
+console.log(a)
+// value is not assigned
+
+//> undefined => datatype
+//>not defined=> error
+
+
+// null
+if(!null){
+    ///
+}
     </script>
 </body>
 </html>
