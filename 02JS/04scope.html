@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+      <!-- var let const -->
+      <!-- scope -->
+
+      <script>
+    //     {
+    //     //block of code 
+    //   }
+
+    //   for(){
+
+    //   }
+
+    var a=10 ;
+    let b=40;
+    const c=50;
+    
+    // global variable
+
+    {
+        console.log(a,b,c)
+        {
+            console.log(a,b,c)  
+        }
+    }
+
+    console.log(a,b,c)
+
+
+
+    {
+        var x=90;// global variable
+        {
+            console.log(x)//90
+            {
+                console.log(x)//90
+            }
+            console.log(x)//90
+        }
+        console.log(x)//90
+    }
+    console.log(x)//90
+
+    //doesnt have a scope
+    //functional scope
+
+    // let keyword
+
+    {
+        let s=90;
+        {
+            console.log(s)//90
+            {
+                console.log(s)//90
+            }
+        }
+        console.log(s)//90
+    }
+
+   // console.log(s)//not defined
+
+
+    {
+        {
+            {
+                {
+                    let s=80;
+                    console.log(s)//80
+                }
+                //console.log(s)// not defined
+            }
+           // console.log(s)// not defined
+        }
+        //console.log(s)// not defined
+    }
+    //console.log(s)// not defined
+
+
+    {
+        {
+            {
+                let s=80;
+                {
+                   
+                    console.log(s)//80
+                }
+                console.log(s)// 80
+            }
+           // console.log(s)// not defined
+        }
+        //console.log(s)// not defined
+    }
+    //console.log(s)// not defined
+
+
+    {
+        {
+            {
+                const s=80;
+                {
+                   
+                    console.log(s)//80
+                }
+                console.log(s)// 80
+            }
+         //  console.log(s)// not defined
+        }
+      //  console.log(s)// not defined
+    }
+    //console.log(s)// not defined
+
+
+
+    function functionname(){
+        var y=190;
+        console.log(y)//190
+    }
+    // console.log(y)//not defined
+    functionname()
+    //console.log(y)//not defined
+
+
+    // =
+    // ==
+    // ===
+
+
+    // =    assignment operator
+
+    // comparasion
+    //==  value
+    console.log(2==2)
+    console.log('2'==2)
+    console.log('20'==20)
+
+    //===
+    //strict comparion  value+datatype
+    console.log(2===2)
+    console.log('2'===2) //string is not equal to number
+    console.log('20'===2)//false
+
+
+    // Arthimatic operators
+    // logical operators
+    //conditional
+
+      </script>
+
+</body>
+</html>

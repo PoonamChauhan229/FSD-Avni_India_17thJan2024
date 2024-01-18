@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--  -->
+    <!-- var let const -->
+    <!-- declaring the variable -->
+
+    <!-- var keywords -->
+    <script>
+        var u;
+
+        var a=70;
+        console.log(a)//70
+
+        a=80;
+        console.log(a)//80
+
+
+        var a=90;
+        console.log(a)//90
+
+        var a=100;
+        console.log(a)
+
+
+        // ?hoisting
+        console.log(b)//undefined
+        var b;
+
+
+        // let keyword:
+        //es5-es6 version
+        let h;
+
+        let c=90;
+        console.log(c)//90
+
+        c=100;
+        console.log(c)//100
+
+        c=200;
+        console.log(c)//200
+
+        //let c=80;
+        console.log(c)//error=>Uncaught SyntaxError: Identifier 'c' has already been declared
+
+        //console.log(x)//Uncaught ReferenceError: Cannot access 'x' before initialization
+        let x;
+
+
+        //const kewyord=> constant 
+        // pi=3.14
+
+        //const f;//Missing initializer in const declaration
+
+        const d=90;
+        console.log(d)//90
+
+      //  d=80;
+        console.log(d)//Uncaught TypeError: Assignment to constant variable.
+
+       // d=90;
+        console.log(d)//Uncaught TypeError: Assignment to constant variable.
+
+        //const d=100;
+        console.log(d)//Uncaught SyntaxError: Identifier 'd' has already been declared 
+
+        //console.log(e)//Uncaught ReferenceError: Cannot access 'e' before initialization
+        const e=90;
+
+
+        // var let const
+        // var => hoisting , declare , assign, resassign , redeclare
+        //let => declare, assign, reassign  XXXX  redeclaration , hoisting
+        //const => declare, assign  XXXX redeclaration, reassign , hiositing, declaration without initilaization
+
+
+        // node => const
+        //react/JS=> let
+
+        // Js for few / beginning => var 
+    </script>
+</body>
+</html>
