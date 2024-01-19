@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Operator	Description
+        Mathematics
+        +	Addition
+        -	Subtraction
+        *	Multiplication
+        **	Exponentiation (ES2016)
+        /	Division => Quotient
+        %	Modulus (Remainder)
+        ++	Increment
+        --	Decrement 
+        
+    -->
+
+
+    <!-- JavaScript Assignment Operators
+            Assignment operators assign values to JavaScript variables.
+
+            Operator	Example	Same As
+            =	x = y	x = y
+            +=	x += y	x = x + y
+            -=	x -= y	x = x - y
+            *=	x *= y	x = x * y
+            /=	x /= y	x = x / y
+            %=	x %= y	x = x % y
+            **=	x **= y	x = x ** y -->
+
+
+            <!-- Operator	Example	Same As
+
+                &&=> and 
+                ||=>OR
+            -   !=>not
+
+                    &&=	  x &&= y	x = x && (x = y)
+                    ||=	  x ||= y	x = x || (x = y)
+        -->
+
+            <script>
+                let x=10;
+                let y=5;//undefined
+                // y = x
+                console.log(x,y)
+                // x += y //x=x+y
+                console.log(x,y)
+
+                x -= y //10-5=5
+                console.log(x,y)//
+
+                // &&=>//all the conditions should be true //true
+                a=10;
+                b=50
+                if(a==10 || b<20){// any one condition is true
+                    console.log("hey i m smaller")
+                }else{
+                    console.log("hey i am bigger")
+                }
+            //    various ways 
+                var p=10;
+                var q=20;
+                console.log("p-",p,"q-",q) // p-10 q-20
+                console.log("p-"+p+" q-"+q)// p-10 q-20 => string
+
+                // es6 version
+                //template literals=> below esc button
+                //``=> back ticks
+                // js variable inside the backticks
+                // ${variablename}
+
+                console.log(`p-${p} q-${q}`)
+                let temp =23
+               let humidity=20
+                console.log(`In mumbai, the tempearture is ${temp} and here humidity is ${humidity}`)
+                console.log(`${p} ${q}`)
+                console.log(p,q)
+            </script>
+</body>
+</html>
