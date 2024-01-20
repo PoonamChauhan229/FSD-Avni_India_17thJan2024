@@ -1,0 +1,61 @@
+NOTE: 
+*ALL THE BELOW QUESTIONS TO BE SOLVED IN ALL THE TYPES OF FUNCTION
+*EACH QUESTION SHOULD HAVE 4 SOLUTIONS
+
+Hints: Read about string and array Methods from MDN DOCS JavaScript
+
+Ques1:
+Write a JavaScript function that reverses a number.
+Example x = 32243;
+Expected Output : 34223
+
+
+Ques2:
+Write a JavaScript function that checks whether a passed string/number is a palindrome or not?
+Example str = madam o/p=> true;
+Example num= 12321 o/p=> true;
+Example str1 = fox o/p=> true
+
+Ques3:
+Write a function to  convert Temperature from Celsius to Fahrenheit
+Input:['20']
+Output:68
+
+Ques4:
+Write a function to find Factorial of a number
+Input:5
+Output:120
+Input:6
+Output:720
+
+Ques5:
+Write a JavaScript function that returns a string that has letters in alphabetical order.
+Example string: 'javascript'
+Expected Output: 'aacijprstv'
+
+Ques6:
+Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word into upper case.
+Example string: 'the quick brown fox'
+Expected Output: 'The Quick Brown Fox '
+
+Ques7:
+Write a JavaScript function that accepts a string as a parameter and finds the longest word within the string.
+Example string : 'Web Development Tutorial'
+Expected Output : 'Development'
+
+Ques8:
+Write a JavaScript function that accepts a list of country names as input and returns the longest country name as output.
+Sample function : Longest_Country_Name(["Australia", "Germany", "United States of America"])
+Expected output : "United States of America"
+
+Ques9:
+Write a JavaScript function to get the function name.
+Hints:Log the name of the current function to the console using arguments.callee.name
+
+Ques10:
+Why pay a fortune teller when you can just program your fortune yourself?
+
+Write a function named tellFortune that:
+takes 4 arguments: number of children, partner's name, geographic location, job title.
+outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+Call that function 3 times with 3 different values for the arguments.
