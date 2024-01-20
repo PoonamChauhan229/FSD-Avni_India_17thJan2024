@@ -158,17 +158,35 @@ console.log(obj)
 obj['parent number']=89898989;
 console.log(obj)
 
-
-
 //upadte
 obj.stu_email="abc@gmail.com"
 console.log(obj)
 
 console.log(obj['full name']="uiopop yuyuy")
 
+//delete
+delete obj.stu_name
+console.log("OBJ",obj)
 
+// calculate the length.
+// .length works array
+console.log(obj.length)
+
+console.log(Object.keys(obj))// all the keys inside an array
+//length
+console.log(Object.keys(obj).length)// 6
+
+console.log(Object.values(obj))// all the values inside an array
+//length
+console.log(Object.values(obj).length)//6
 // trivial
 
+// Object
+// for in loop
+for(var key in obj){
+    console.log(key)// keys 
+    console.log(obj[key])// values of it
+}
 // undefined
 
 var a;
@@ -178,6 +196,12 @@ console.log(a)
 //> undefined => datatype
 //>not defined=> error
 
+var arr=[
+        {name:"A",age:25},
+        {name:"B",age:26},
+        {name:"C",age:27},
+]
+console.log(arr[0].name)
 
 // null
 if(!null){
