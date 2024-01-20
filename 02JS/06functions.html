@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="print()">Click Me to Print</button>
+    <script>
+        // function
+        function functionaname(){
+            //block of code
+        }
+        functionaname()//function invocation/function calling
+
+        var count=0
+        function print(){
+            count++
+            console.log("Function printing.......",count)
+        }
+        print()
+        print()
+        print()
+
+
+        function sum(){
+            console.log(10+20)
+        }
+        sum()
+        sum()
+
+        //function with parameters
+        function test(parameter1,parameter2,parameter3){//parameters
+
+        }
+        test(4,5,6)//arguments
+
+
+         //function with parameters
+         function total(n1,n2,n3){//parameters
+            console.log(n1,n2,n3)
+            //n1=15
+            //n2=14
+            // n3=16
+            console.log(n1+n2+n3)
+        }
+        total(15,14,16)//arguments
+        total(56,89,0)
+        var x=total(56,90,100)
+        console.log(x)//undefined=> variable declared but value is not assigned
+
+
+        //function with return keyword
+        //return statement should be last
+        function retfunction(){
+            console.log(900)
+            return 14565;
+            // console.log(90)
+        }
+        retfunction()
+        console.log(retfunction())
+        var retval=retfunction()
+        console.log(retval)
+
+
+        function sum(n1,n2,n3){//parameters
+            // let sum=n1+n2+n3
+            // return sum;
+            return n1+n2+n3
+        }
+        // sum(15,14,16)//arguments
+        let sumoutput= sum(15,14,16)//45
+        console.log(sumoutput)
+
+        function display(z){
+            console.log("Display sum from sum function",z)
+        }
+        display(sumoutput)
+
+
+        // E+M+S => 78/100 90/100 95/100
+        // function 
+        // => function 1 => sum of marks obtained => return
+        // => function 2 => calculate the percentage => no need to use return
+
+
+        // var arr
+        //var str
+        //var num /n
+        //DRY
+        //DONT REPEAT YOURSELF
+
+    </script>
+</body>
+</html>

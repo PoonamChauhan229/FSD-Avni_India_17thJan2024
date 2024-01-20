@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function with parameter with return without return
+        //annoymous function
+             //who does nt have a function name
+             //store the netire function into the variable
+    
+        // Syntax
+
+            let variable=function(){
+                //block of code
+                //with ret
+            }
+            variable()
+
+            let mulitplication=function(){
+                console.log(3*6)
+            }
+            mulitplication()
+
+            let mulitply=function(a,b){
+                console.log(a*b)
+            }
+            mulitply(3,6)
+
+            let mult=function(a,b){
+                 return (a*b)
+            }
+            console.log(mult(3,6))
+
+            //window events
+
+            window.console.log(mult(3,6))
+
+
+            window.onload=function(){
+                console.log("page is fully loaded");
+            }
+
+            //arrow function => es6 version
+            //ease of writing function
+            //short hand
+
+            //without return
+            var x=()=>console.log("Hello")
+            x()
+
+            //witih return
+            var y=(a)=>a
+            console.log(y(2))
+
+            var variableA=()=>console.log("Hey")
+            variableA()
+
+            var variableB=(b)=>b
+            console.log(variableB(67))
+
+            // single line => return +{} not come
+
+            //mulitple
+
+            var variableC=(u,w)=>{
+                var a=100
+                let b=a+500+u*w;
+                return b;
+            }
+            console.log(variableC(500,78))
+            //missing
+            // function keyword
+            //functioname
+            //return
+            //{}
+
+            // added
+            //=>
+
+            //presenst
+            //()
+            //variablename
+
+            window.onload =()=> {
+                console.log("page is fully loaded with arrow function");
+            }
+
+            window.onload =()=>console.log("page is fully loaded with arrow function in single line")
+
+            // https://developer.mozilla.org/en-US/docs/Web/API/Window/load_event
+            
+
+    </script>
+</body>
+</html>
