@@ -1,0 +1,102 @@
+Ques1:
+Create and Print hollow square star pattern 
+*****
+*   *
+*   *
+*   *
+*****
+
+Ques2:
+Print below left pascal traingle Pattern
+
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+
+Ques3:
+Print below Hourglass Star Pattern
+
+*********
+ *******
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
+
+Ques4:
+Print below Hollow Diamond Pattern
+
+    *
+   * *
+  *   *
+ *     *
+*       *
+ *     *
+  *   *
+   * *
+    *
+
+
+Ques5:
+Print below heart Star Pattern
+
+ ***   ***
+***** *****
+***********
+ *********
+  *******
+   *****
+    ***
+     *
+
+Ques6:
+Print below the traingle pattern
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+
+Ques7:
+Print below the traingle pattern
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+
+Ques8:
+Print the reverse traingle
+12345
+1234
+123
+12
+1
+
+Ques9:
+Print the number pyramid pattern
+    1
+   123
+  12345
+ 1234567
+123456789
+
+Ques10:
+Print the Right Triangle Pattern in Javascript
+    *
+   **
+  ***
+ ****
+*****
+
+
+
