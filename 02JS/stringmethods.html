@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Split
+        var str="Hello World!!"
+        //sepraete=> H e l l o W o r l d
+        //split =>[]
+        // split
+       var arr= str.split('').join(" ")
+       console.log(arr)
+
+       //uppercase + lowercase
+       var str1="Google   "
+       var str2=str1.toLowerCase()
+       console.log(str2)
+
+       var str3=str1.toUpperCase()
+       console.log(str3)
+
+       //trim
+       //remove space beg +end
+       str4=str1.trim()
+       console.log(str4)
+
+       str5=str4.length
+       console.log(str5)
+
+       var str6="Hello World Welcome" //557
+    var arr=str6.split(" ")
+    console.log(arr)
+    var res=arr.map((element)=>element.length)//uppercase
+    console.log(res.join(""))
+
+    var res1=arr.map((element)=>element.toUpperCase())//uppercase
+    console.log(res1.join(" "))
+
+// replace
+    const paragraph = "I think Ruth's dog is cuter Ruth's than your dog! Ruth's";
+
+console.log(paragraph.replace("Ruth's", 'my'));
+// Expected output: "I think my dog is cuter than your dog!"
+
+console.log(paragraph.replace(/Ruth's/g, 'my'));
+// Expected output: "I think Ruth's ferret is cuter than your dog!"
+
+
+       //substr
+       //charat
+       //includes
+    //    .....
+
+
+    </script>
+</body>
+</html>

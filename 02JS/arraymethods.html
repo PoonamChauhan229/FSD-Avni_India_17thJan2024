@@ -91,6 +91,40 @@
 // for loop
 // sum=0;
 // sum=5
+
+// array of objects:
+
+// [
+    // {},=>0th index => 1st element
+    // {},=> 1st index => 2nd element
+    // {}=> 2nd index => 3rd element
+// ]
+var student=[
+    {
+        name:"kapil",
+        marks:50
+    },
+    {
+        name:"rahul",
+        marks:60
+    },
+    {
+        name:"sachin",
+        marks:40
+    }
+]
+console.log(student)
+// console.log(student[0].marks)
+// console.log(student[1].marks)
+
+// student.map((element,index)=>console.log(element.marks+20))
+let res7=student.map((element,index)=>element.marks+20)
+console.log(res7)
+
+// >=50 using filter
+
+// Using an map method:
+// marks+20(grace+20)
     </script>
 </body>
 </html>
