@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // array
+        //[], index no, elements . hetrogenous datatypes
+
+        // [1,2,3,4]=>[2,4,6,8]
+        //for loop
+        // 2*arr[i]
+        //2
+        //4
+        //6
+        //8
+        //arr[i]=2*arr[i] => 
+
+        //4 to 6 steps=> processing time 
+        // MRF
+        //map reduce filter => react+ node
+
+
+        // map
+        // => transform your data
+        //=> function as a args
+        //returns a new aray
+        // ()
+        //works on individyal element 
+        //arrow function
+        //doesnt change the original arry
+
+        function fn(){
+
+        }
+        fn()
+        //arr.map()
+
+        var arr=[1,2,3,4];
+        arr.map((element,index)=>console.log(element*2,index))// calling 
+        let res=arr.map((element,index)=>element*2+index)
+        // 1*2
+        // 2*2
+
+        console.log(res)
+        console.log(arr)
+        
+        // filter method
+        //()
+        //function as an args
+            //element, index
+        //if condition => true=> execute the op
+        // if consition => flase => ignore 
+
+        let res1=arr.filter((element)=>element%2==0)
+        console.log(res1)
+        //odd no
+
+        //reduce
+        //123456789=> sum 
+        //array 
+
+        //single value
+        // ()
+          //function as an args
+            //acc, cv
+            //
+
+        arr.reduce((acc,cv)=>acc+cv)
+
+        var arr=[10,2,3,4]//10
+    // var res=arr.reduce((acc,cv)=>acc+cv)
+    // console.log(res)
+    
+    var res3=arr.reduce((acc,cv)=>acc+cv,100)
+    console.log(res3)
+
+    // unsshit
+    // shift
+    //isArray
+    // pop
+    // push
+    //slice
+    
+    // etc
+
+ 
+// for loop
+// sum=0;
+// sum=5
+    </script>
+</body>
+</html>
