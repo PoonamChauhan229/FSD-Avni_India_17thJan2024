@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:56
+        }
+        console.log(obj)
+        // JSON
+        // Javascript object notation
+
+        var jsonobj={
+            "key1":"value1",
+            "key2":"value2",
+            "key3":"value3",
+            "key4":67
+        }
+        console.log(jsonobj)
+
+        //client=> req ++
+        //server=> res ++
+
+        // server important => client cannot data
+        //server => string alnguage
+        //=> server needs any data=> string
+        // => servr response=> string
+        //=> convert in a user/client readable form
+
+        //json string to server
+        // server res json string=> object
+
+       // JSON.stringify()// json string => sending to server
+        console.log(JSON.stringify(obj))
+
+       // JSON.parse()// json string to obj => server response
+
+        console.log(JSON.parse('{"key1":"value1","key2":"value2","key3":"value3","key4":56}'))
+
+        //
+        // Server
+        //API
+        //request
+        // response
+
+        //Client  ==== communication(API)========   Server
+        //backend => api => call => server
+
+        // restuarant=> table=>place an order => waiter(biryani)=>kitchen(chef)===> request cycle
+        // kitchen(chef)=>waiter(biryani)=> table  => response cycle
+
+        //XHR object
+        //xmlhttprequest
+
+        let request=new XMLHttpRequest()
+        console.log(request)
+        //open an connection
+        request.open('GET',"https://restcountries.com/v2/all")
+
+        //send a connect+ initiate  bridge
+        request.send()
+        //onload => data
+
+        request.onload=function(){
+            // console.log(request.response)
+            //parse 
+            // console.log(JSON.parse(request.response))
+            let data=JSON.parse(request.response)
+            console.log(data)// array of objects
+            console.log(data[0])
+
+            for(var i=0;i<data.length;i++){
+                // console.log(data[i].name)
+                console.log(`my country name is ${data[i].name} , area is ${data[i].area} sq.m ,flag PNG image link is ${data[i].flags.png} and ,flag svg image link is ${data[i].flags.svg}.`)
+            }
+
+            // my country is ..... , area is .... and flag image link is .......
+
+            //open weather api
+            //apikey
+
+        }
+
+
+
+    </script>
+</body>
+</html>

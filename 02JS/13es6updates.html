@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // es6 version
+        let test=()=>console.log(2)
+        test()
+        //spread operator
+        //rest operator
+
+        // syntax ...
+        var arr=[1,2,3,4,5]
+        console.log(arr.join(" "))
+        console.log(...arr)
+        // Math properties
+        //max
+        //min
+        console.log(Math.max(1,2,3,4,5))
+        console.log(Math.max(arr))
+        console.log(Math.max(...arr))//1,2,3,4,5
+        console.log(Math.min(...arr))
+
+        let arr1="hello"
+        console.log(...arr1)
+       console.log( arr1.split(""))
+        console.log([...arr1])
+
+        let arr2=[78,90,89,67,7]
+        console.log(arr.concat(arr2))
+        let arr3=[...arr,...arr2]
+        console.log(arr3)
+
+
+        //function
+        function sum(x,y,z){
+            console.log(x+y+z)
+        }
+        sum(4,5,6)
+        let num=[4,5,6]
+        sum(...num)
+        
+        let num1=[56,89,70,67,45,90,45,34]
+
+        function total(num1){
+            console.log(num1)
+            var s=0;
+            for(var i=0;i<num1.length;i++){
+                s+=num1[i]
+            }
+            console.log(s)
+        }
+        total(num1)
+
+        //rest //rest args=> rest parameter
+        function add(...args){
+            console.log(args)
+            var s=0;
+            for(var i=0;i<args.length;i++){
+                s+=args[i]
+            }
+            console.log(s)
+        }
+
+        add(56,89,70,67,45,90,45,34,56,89,70,67,45,90,45,34,56,89,70,67,45,90,45,34,56,89,70,67,45,90,45,34,56,89,70,67,45,90,45,34)
+
+        function display(a,b,c,...args){
+            console.log(a,b,c)
+            console.log(args)
+            var s=0;
+            for(var i=0;i<args.length;i++){
+                s+=args[i]
+            }
+            console.log(s+a+b+c)
+        }
+        display(89,70,67,45,90,45,34,56,89,70,67,45,90,45,34,56,89,70,67,45)
+
+        // function test1(a,b,...args,c){//SyntaxError: Rest parameter must be last formal parameter
+        //     console.log(a,b,c)
+        //     console.log(args)
+        //     var s=0;
+        //     for(var i=0;i<args.length;i++){
+        //         s+=args[i]
+        //     }
+        //     console.log(s+a+b+c)
+        // }
+        // test1(89,70,67,45,90,45,34,56,89,70,67,45,90,45,34,56,89,70,67,45)
+
+        //object shorthand property
+
+            var name="Avni",age=45,section="10th"
+            // create an obj 
+
+
+        //destructing
+
+    </script>
+</body>
+</html>
