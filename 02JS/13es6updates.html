@@ -92,11 +92,79 @@
 
         //object shorthand property
 
-            var name="Avni",age=45,section="10th"
+            var name="Avni",age=45,section="10th",locationPlace="Pune"
             // create an obj 
 
+            var obj={
+                name:"Avni",
+                age:45,
+                section:"10th"   
+            }
+            console.log(obj)
+            //
+
+            var obj1={
+                name:name,
+                age:age,
+                section:section
+            }
+            console.log(obj1)
+
+            //es6 
+            //key and value is same
+            var obj3={
+                name,
+                age,
+                section
+            }
+            console.log(obj3)
+            var obj4={name,age,section}
+            console.log(obj4)
+
+            //u can use mixture,
+            var obj5={
+                name,
+                age,
+                section,
+                place:locationPlace,
+                grade:"B"
+            }
+            console.log(obj5)
 
         //destructing
+        // unpackagaing
+        // arrray
+
+        var arr56=["Poonam","Avni","Javascript"]
+        console.log(arr56[0])
+        console.log(arr56[1])
+        let [tutorname,studentname,learning]=arr56
+        console.log(tutorname)
+        console.log(studentname)
+        console.log(learning)
+
+        // objects
+       // var firstname="Avni",gender="Female",sectionClass="10th",exactLocation="Pune"
+        var obj6={
+                firstname:"Avni",
+                gender:"Female",
+                sectionClass:"10th",
+                place:"Pune",
+                grade:"B"
+            }
+            //destructing
+            //same keys
+            let {firstname,gender,sectionClass,place,grade}=obj6
+            console.log(firstname,gender,sectionClass,place)
+            console.log(grade)
+
+            console.log(obj6.grade)
+            console.log(obj6.gender)
+
+            // Javascript=> projects
+            //Massive used in react
+            //useState 
+            //const [state,setState]=useState() // array destructing
 
     </script>
 </body>
