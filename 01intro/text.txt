@@ -3,6 +3,7 @@ vscode-icons
 Material Icon Theme
 Prettier-Code formatter
 Live server
+html css support
 
 
 FSD :
