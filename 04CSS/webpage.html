@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* display: flex; */
+            grid-template-columns: auto auto auto auto;
+            grid-template-rows: 40px 240px 190px 200px 30px;
+            border:1px solid black;
+            /* width:660px; */
+            /* text-align: center; */
+            /* grid-gap: 15px;  */
+            background-color: maroon;
+            /* height: 600px; */
+        }
+        .item{
+            /* padding: 50px; */
+            /* border: 1px solid white; */
+        }
+        .item1{
+            background-color: black;            
+            grid-column: 1/5;
+            grid-row: 1/2;   
+            color:white;
+                  
+            
+        }
+        .flexitems{
+            display: flex;
+            /* float: right !important;   */
+        }
+        .item2{
+            background-color: green;
+            grid-column: 1/4;
+            grid-row: 2/3;
+        }
+        .item3{
+            background-color:blueviolet;
+            grid-column: 4/5;
+            grid-row: 2/5;
+           
+        }
+        .item4{
+            background-color:red;
+            grid-column: 1/4;
+            grid-row: 3/4;
+        }
+        .item5{
+            background-color: orange;
+            grid-column: 1/4;
+            grid-row: 4/5;
+        }
+        .item6{
+            background-color:cadetblue;
+            /* 
+            col => 3-4
+            row => 2-3
+            */
+            grid-column: 1/5;
+            grid-row: 5/6;
+        }
+        .marpad{
+            margin:10px;
+        }
+        .inline{
+            display: inline;
+            margin-top: 10px;
+        }
+        .flexi{
+            display: flex;
+            justify-content: space-between;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Grid Items
+            Flex Items
+        -->
+        <div class="item item1">
+            <div class="flexi">
+                <div class="inline">Logo</div>
+                <div class="flexitems">
+                    <div class="marpad">Home</div>
+                    <div class="marpad">About Us</div>
+                    <div class="marpad">Services</div>
+                    <div class="marpad">Contact Us</div>
+                </div>
+             </div>
+        </div>
+        <div class="item item2">Products</div>
+        <div class="item item3">Notifications</div>
+        <div class="item item4">Image Gallery
+           <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" height="200" width="150" alt="html_logo">
+        <img src="https://w7.pngwing.com/pngs/755/423/png-transparent-html-logo-html-interface-website-isolated-logo-3d-icon-thumbnail.png" height="200" width="150" alt="html_logo">
+        <img src="https://png.pngtree.com/png-vector/20190406/ourmid/pngtree-html-file-document-icon-png-image_913761.jpg" height="200" width="150" alt="html_logo">
+
+        <img src="https://w7.pngwing.com/pngs/201/90/png-transparent-logo-html-html5.png" height="200" width="150" alt="html_logo">
+        
+
+        </div>
+        <div class="item item5">Testimonials</div>
+        <div class="item item6">Footer</div>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+        GRID 2 dimesion row+col
+        FLEX 1 dimesion row ||col
+
+        display property
+        display: grid
+        display: flex
+
+        parent container
+
+        parent child relationship
+
+        container
+        wrapper
+        box
+
+    -->

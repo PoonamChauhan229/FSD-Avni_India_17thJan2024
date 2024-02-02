@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: grid;
+            /* display: flex; */
+            grid-template-columns: auto auto auto;
+            grid-template-rows: auto auto ;
+            border:1px solid black;
+            width:550px;
+            /* text-align: center; */
+            /* grid-gap: 15px;  */
+            background-color: maroon;
+        }
+        .item{
+            padding: 50px;
+            /* border: 1px solid white; */
+        }
+        .item1{
+            background-color: pink;
+            /* 
+            col => 1-2
+            row => 1-2
+            */
+            /* col-3-4 */
+            /* row-1-2 */
+            grid-column-start: 3;
+            grid-column-end: 4;
+
+            grid-row-start:1 ;
+            grid-row-end: 2;
+            
+        }
+        .item2{
+            background-color: green;
+            justify-self: center;
+        }
+        .item3{
+            background-color:blueviolet;
+            /* 
+            col => 3-4
+            row => 1-2
+            */
+            
+            /* 
+            col- 3-4
+            row-2-3
+            start/end
+             */
+            grid-column:3/4 ;
+            grid-row:2/3 ;
+        }
+        .item4{
+            background-color:red;
+        }
+        .item5{
+            background-color: orange;
+        }
+        .item6{
+            background-color:cadetblue;
+            /* 
+            col => 3-4
+            row => 2-3
+            */
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <!-- Grid Items
+            Flex Items
+        -->
+        <div class="item item1">1</div>
+        <div class="item item2">2</div>
+        <div class="item item3">3</div>
+        <div class="item item4">4</div>
+        <div class="item item5">5</div>
+        <div class="item item6">6</div>
+    </div>
+
+</body>
+</html>
+
+<!-- 
+        GRID 2 dimesion row+col
+        FLEX 1 dimesion row ||col
+
+        display property
+        display: grid
+        display: flex
+
+        parent container
+
+        parent child relationship
+
+        container
+        wrapper
+        box
+
+    -->

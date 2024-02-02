@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        .gridchild1{
+            background-color: burlywood !important;
+            /* grid-column: 1/4; */
+grid-column: 1/3;
+grid-row: 1/2;
+
+        }
+      .testclass {
+        height: 150px;
+        width: 150px;
+        background-color: blueviolet;
+        /* margin-right: 4px; */
+        /* margin-bottom: 2px; */
+      }
+
+      #testid {
+        height: 150px;
+        width: 150px;
+        background-color: greenyellow;
+        margin-right: 4px;
+      }
+      /* tag selectors */
+      p {
+        /* border: 4px solid blue; */
+        margin:0;
+        margin-right: 4px;
+      }
+      .test2class{
+        /* background-color: aqua; */
+        /* width: 200px; */
+        border:1px solid black
+
+      }
+      /* flex and grid => parent container */
+      .gridClass{
+        display: grid;
+        width:457px;
+        
+        border:2px solid brown;
+        grid-template-columns: auto auto auto;
+        /* grid-template-rows: 100px 100px; */
+      }
+    </style>
+  </head>
+  <body>
+    <!-- 
+        way to write css
+        inline=> with in the same line of the tag style attribute
+        internal => style tag=> applocable to the page
+        external => link tag inside head => applicable to the entire project
+
+        highest priorty=> 
+        div=> inline/external/ internal=> backgroundcolor:pink/blue/yellow 
+     -->
+    <!-- selectors
+    design our page using selectors
+    attribute
+    id attribute
+    class attribute    
+    -->
+    <!-- 
+        tag=> div{property:value;proerty:value}
+        class .testclass{property:value;proerty:value} => design 1 more than 1 => 
+        id    #idname{property:value;proerty:value} => unique + 
+
+        internal external css
+     -->
+
+    <div style="display: flex">
+        <div id="" class="testclass"></div>
+        <p id="" class="testclass"></p>
+
+        <div id="testid"></div>
+        <p id="testid"></p>
+    </div>
+    <!-- working in js => u should 1 id associated to 1 element -->
+    <p>Hello</p>
+
+    <!-- mutilpe classes -->
+    <div id="" class="testclass test2class">ABC</div>
+
+    <!-- Grid -->
+    <!-- rows and cols -->
+    <div class="gridClass">
+        <div class="testclass test2class gridchild1">1</div>
+        <div class="testclass test2class gridchild2">2</div>
+        <div class="testclass test2class gridchild3">3</div>
+        <div class="testclass test2class gridchild4">4</div>
+        <div class="testclass test2class gridchild5">5</div>
+    </div>
+
+  </body>
+</html>
