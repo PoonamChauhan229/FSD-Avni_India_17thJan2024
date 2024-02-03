@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .test{
+            margin-bottom: 10px;
+        }
+        #div1{
+            background-color: yellow;
+            /* display block */
+            /* not visible +hide => but it is present in the DOM */
+            display: none;
+        }
+
+        #div2{
+            /* block=> inline ++ inline properties applicable and block=> null and void*/
+            background-color: pink;
+            /* block => other display prop */
+            display: inline;
+
+            /* inline +block */
+        }
+        #span1{
+            background-color: orange;
+        }
+        h4{
+             /* block=> inline ++ inline properties applicable and block=> null and void*/
+            display: inline;
+            background-color:aqua;
+        }
+        #span2{
+            /* inline=> block ++ block properties applicable and inline=> null and void*/
+            background-color: blueviolet;
+            display: block;
+            height:100px;;
+            width:200px;
+        }
+        #span3{
+            /* inlline */
+            /* h and w not appliacble */
+            background-color: chartreuse;
+            height:100px;;
+            width:200px;
+        }
+        #div3{
+            /* block=> inline :Q h:,w: App? */
+            /* inline also || block properties should be applicable */
+            background-color: chocolate;
+            display: inline-block;
+            height: 100px;
+            width:200px;
+        }
+    </style>
+</head>
+<body>
+    <!-- display
+    grid> rows cols-2 dimesion
+    flex> rows/cols-1 dimension
+    block> next line
+
+
+    none
+    inline
+    block
+    inline-block
+    
+    
+    -->
+   <div id="div1" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</div>
+   <hr>
+   <h4>display inline:-</h4>
+   <div id="div2" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</div>
+   <span id="span1" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</span>
+    <hr>
+   
+
+    <hr>
+    <!-- inlline=explixity mentioned -->
+    <h4>displayblock:-</h4>
+    <!-- block-expliciry mentioned -->
+    <span id="span2" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</span>
+    <span id="span3" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</span>
+    
+    <hr>
+
+    <hr>
+    <!-- inlline=explixity mentioned -->
+    <h4>displayinlneblock:-</h4>
+    <!-- block-expliciry mentioned -->
+    <div id="div3" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</div>
+    <div id="div4" class="test">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Magnam, fugit.</div>
+    
+    <hr>
+
+</body>
+</html>
