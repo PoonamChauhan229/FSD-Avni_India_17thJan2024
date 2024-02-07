@@ -1,0 +1,8 @@
+DOM
+Document object MOdel
+
+Window object MOdel
+    > Global object > window events
+    > Top most in the heiracchy
+ 
+Document object Model

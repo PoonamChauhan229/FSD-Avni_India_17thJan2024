@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document-DOM</title>
+</head>
+<style>
+    /* .main{
+        background-color: yellowgreen;
+    } */
+</style>
+<body>
+   
+    <button onclick="fn()">Dark Mode</button>
+    <button onclick="fn1()">Light Mode</button>
+
+    <button onclick="fn()">Dark Mode</button>
+    <script>
+        console.log("Hi")
+        window.console.log("HI")
+        //window global object > window omit
+        console.log("Hey")
+
+        // DOM > browser
+        console.log(window.document)
+        // without HTML CSS
+        console.log(document.title)
+        console.log(document)
+
+
+        // dynamically
+        var division=document.createElement('div')
+
+        division.innerHTML=`<h2>Hello World</h2>`
+        // attributename =attributevalue
+        //id='idtest'
+        //class='classtest'
+        division.setAttribute('id','idtest')
+        division.setAttribute('class','classtest')
+        // mulitple claasess
+        //classList
+        division.classList.add('main','main1','main2','test45')
+        // division.style.backgroundColor="lime"
+
+        document.body.append(division)
+        // 
+       // console.log(division)
+        //________________________________________________
+
+        var section=document.createElement('div')
+
+        section.innerText=`<h2>Hello World</h2>`
+        
+        document.body.append(section)
+        // 
+       // console.log(section)
+
+
+        //using HTML+CSS
+
+        function fn(){
+            console.log("fn")
+            // division.classList.remove('main')
+            console.log(division)
+            document.body.style.backgroundColor="black"
+            division.style.color="white"
+
+        }
+
+        function fn1(){
+            console.log("fn")
+            // division.classList.remove('main')
+            console.log(division)
+            document.body.style.backgroundColor="white"
+            division.style.color="black"
+
+        }
+
+        var btn=document.createElement('button')
+
+        btn.innerText="Light Mode"
+        
+        document.body.append(btn)
+
+        let themeVal="light"
+        btn.addEventListener('click',()=>{
+            if(themeVal=="light"){
+                btn.innerText="Light Mode"
+                document.body.style.backgroundColor="white"
+                division.style.color="black"
+                themeVal="dark"
+            }else{
+                btn.innerText="Dark Mode" 
+                document.body.style.backgroundColor="black"
+                division.style.color="white"
+                themeVal="light"
+            }
+        })
+       
+
+
+
+    </script>
+</body>
+</html>
