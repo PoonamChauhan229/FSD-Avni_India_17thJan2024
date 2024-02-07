@@ -1,0 +1,39 @@
+Breakpoint	Class infix	Dimensions
+X-Small	                    Non strt screen size <576px  col
+Small	                    sm	≥576px <768px      
+Medium	                    md	≥768px <992px
+Large	                    lg	≥992px <1200px
+Extra large	                xl	≥1200px <1400px
+Extra extra large	        xxl	≥1400px to last screen size
+
+Window.innerWidth
+
+sm md xl lg xxl
+
+12 cols
+
+container
+    >row
+        >12 cols 
+    >row
+        >12 cols
+    >row
+        >12 cols
+    ........
+
+container-fluid
+    >row
+        >12 cols
+    >row
+        >12 cols
+    >row
+        >12 cols
+    ........
+
+12
+> 1+1+1+1+1+1+1+1+1+1+1+1
+
+xs 
+sm from sm to xxl => showing the same 
+md      md to xxl  
+sm md   sm to md(stsrt)   md to xxl

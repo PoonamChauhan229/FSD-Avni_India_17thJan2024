@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .name{
+            padding: 5px;
+            /* border: 1px solid white; */
+            border-bottom: 1px solid grey;
+        }
+        /* child */
+        .dropdownlist{
+            background-color: black;
+            color:white;
+            display: none;
+            position: absolute;
+            left:30px;
+            /* display: block; */
+            /* background-image: linear-gradient(to right, red , pink); */
+            /* background: linear-gradient(to top, #373b44, #4286f4); */
+            background-image: linear-gradient(-225deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+        }
+        /* parent */
+        .dropdown{
+            border: 4px solid black;
+            width:60px;
+            background-color: black;
+            color:white;
+            position:relative;
+            background-image: linear-gradient(120deg, #fccb90 0%, #d57eeb 100%);
+        }
+        /* hover==>dropdown=> dropdownlist */
+        .dropdown:hover .dropdownlist{
+            display: block;
+        }
+        .gradient{
+            height: 250px;
+            width: 250px;
+            border: 1px solid red;
+            background-image: linear-gradient(327deg, #231557 0%, #44107A 29%, #FF1361 67%, #FFF800 100%);
+        }
+            
+    </style>
+</head>
+<body>
+    <!-- parent -->
+    <div class="dropdown">Courses
+        <!-- child -->
+        <div class="dropdownlist">
+            <div class="name">HTML</div>
+            <div class="name">CSS</div>
+            <div class="name">JavaScript</div>
+            <div class="name">React</div>
+            <div class="name">Node</div>
+        </div>
+    </div>
+    <div class="gradient">
+
+    </div>
+
+    <!-- overflow property  -->
+    <!-- grdaients
+    
+    https://uigradients.com/
+
+-->
+</body>
+</html>
