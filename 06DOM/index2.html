@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="test1" class="test2">Hello World</div>
+    <div id="test1" class="test2">Hello World</div>
+    <div id="test1" class="test2">Hello World</div>
+    <div id="test1" class="test2">Hello World</div>
+    
+    <script>
+        // get the elements from your html
+        var test1=document.getElementById('test1')
+        console.log(test1)
+
+        // document.getElementById
+        //attributes
+
+        // document.getElementsByClassName
+
+        var test2=document.getElementsByClassName('test2')
+        console.log(test2)
+        // document.getElementsByTagName
+
+        for(var i=0;i<test2.length;i++){
+            console.log(test2[i])
+            test2[i].innerHTML="Hello World by class"
+        }
+
+        var test3=document.getElementsByTagName('div')
+        console.log(test3)
+
+        // css selectors
+        //.classname
+        //#id
+
+        var res=document.querySelector('#test1')
+        console.log(res)
+
+        var res1=document.querySelector('.test2')
+        console.log(res1)
+
+        var res2=document.querySelectorAll('.test2')
+        console.log(res2)
+
+        var res4=document.querySelectorAll('#test1')
+        console.log(res4)
+    </script>
+</body>
+</html>
