@@ -1,0 +1,28 @@
+window.innerWidth
+window.innerheight
+
+
+window.close()
+windouw.open()
+window.console.log()
+
+
+alert()
+confirm()
+prompt()
+setinterval
+setTimeout
+
+
+Events on DOM
+
+.propertyname=> property
+.methodname()=> method
+
+array.length
+parseInt(6.7)// o/p=>
+parseFloat()
+Math.max()
+
+
+functioname()//method => function 
