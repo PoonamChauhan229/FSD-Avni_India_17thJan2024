@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="counter"></p>
+    <p id="counter2"></p>
+    <script>
+        //asynchrous 
+        // setTimeout(function,delay)
+        //3 sesc
+        // 3000 ms
+        console.log("Hi, Hello")
+
+        //setTimeout(timer1,3000)
+        function timer1(){
+            console.log("Timer1 function has called")
+        }
+
+        // arrow function
+        console.log("Hi, Hello")
+
+        //setTimeout(()=>console.log("Timer 2 has been called"),4000)
+
+        console.log("Hi, Hello")
+
+        // 1 to 10 11=> New Year
+        // for(var i=1;i<=11;i++){
+        //     setTimeout(()=>{
+        //         console.log(i)
+        //     if(i==11){
+        //         console.log("Happy New Year")
+        //     }
+        //     },1000*i)
+
+        // }
+
+        let counter=document.getElementById('counter')
+        for(let i=1;i<=11;i++){
+            setTimeout(()=>{
+                console.log(i)
+                counter.innerText=i
+                if(i==11){
+                console.log("Happy Independenc Year")
+                counter.innerText="Happy Independence Year"
+            }
+
+            },1000*i)
+            
+        }
+
+
+        let counter2=document.getElementById('counter2')
+        for(let i=1;i<=5;i++){
+            // console.log(i)
+            
+            setTimeout(()=>{
+                if(i<5){
+                console.log(i)
+                counter2.innerText=i
+                }else{
+                console.log("Happy New Year")
+                counter2.innerText="Happy New Year"
+            }
+
+            },1000*i)
+            
+        }
+
+
+
+    </script>
+</body>
+</html>

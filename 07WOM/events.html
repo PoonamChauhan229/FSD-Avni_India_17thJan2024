@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+
+        tag
+        script
+     -->
+     <p id="displayText"></p>
+
+    
+
+     <button id='btn' onclick="display(event)">1</button>
+     
+     <button id='btn1' onclick="display(event)">2</button>
+
+     
+     <button id='btn+' onclick="display(event)">+</button>
+     <input type="text" value="Onclick"onclick="display(event)">
+
+
+     <input type="text" name="" id="" onblur="test1(event)" placeholder="OnBlur">
+
+     <input type="text" name="" id="" oninput="test2(event)" placeholder="OnInput Event">
+
+
+     <button id="test100">Add Event addEventListener</button>
+
+     <script>
+        let displayText=document.getElementById('displayText')
+        function display(event){
+            console.log(document.getElementById('btn').innerText)
+            console.log("Button is clicked")
+            console.log(event)
+            console.log(event.target.value)
+            displayText.innerText=event.target.value
+             }
+
+            //  When u perform any action, event is triggered
+
+            //event=> object
+            //contains info about all the element
+
+            //input element
+            //value=> 
+
+            let test1=(event)=>{
+                console.log(event.target.value)
+            }
+
+            let test2=(event)=>{
+                console.log(event.target.value)
+            }
+
+            let test100=document.getElementById('test100')
+
+            test100.addEventListener('click',(event)=>{
+                console.log("hello World",event)
+            })
+
+            // setTimeout()
+            // parseInt()
+
+
+            document.addEventListener("keyup", (event) => {
+                console.log(event)
+                if(event.keyCode=72){
+                    console.log(event.key)
+                }else{
+                    console.log(event.key)
+                }
+            })
+
+// calculator> JS
+            // > click event
+            // https://developer.mozilla.org/en-US/docs/Web/API/Element/keydown_event
+            //eval
+            console.log(eval(2+3))
+
+            function caculate(){                
+                screenop=(2+3)
+                eval(screenop)
+            }
+            caculate()
+
+
+     </script>
+</body>
+</html>
