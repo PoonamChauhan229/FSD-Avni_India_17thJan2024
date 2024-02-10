@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- API:
+Application programming interface
+
+Restaurant => 
+
+PIZZA=> PIZZA HUT
+    >MENU
+    >PLACE ORDER ==>WAITER
+    >WE WILL WAIT
+    >WAITER > KITCHEN >PIZZA BAKER> CHEF > PREPRE ORDER
+    >WAITER > SERVE US
+
+
+CLIENT SERVER    API
+WE      KITCHEN  KEY
+
+
+rest API>  -->
+
+
+<script>
+    var request=new XMLHttpRequest() // creating an XHR OBJECT > connect to server > via API
+    // console.log(request)
+
+    // OPEN AN CONNECTION
+    request.open('GET','https://restcountries.com/v2/all')
+
+    //SEND AN CONNECTION
+    request.send()
+
+    //ONLOAD > GET THE O/P
+
+    request.onload=function(){
+        // console.log(request)
+        // console.log(request.response)// string
+        //string to object=> JSON.Parse
+
+        let data=JSON.parse(request.response)
+        console.log(data)
+        console.log(data[0].name)
+
+        data.map((element)=>console.log(`My country name:${element.name} and its area is ${element.area}`))
+
+        for(var i=0;i<data.length;i++){
+            console.log(`My country name:${data[i].name} and its area is ${data[i].area}`)
+        }
+
+        /// other loop
+        // for each
+        // for in
+        // for of 
+        //filer method> area is greater >18272=> country name should be the output
+        // reduce => to add the population > 250 how many people stay.
+        
+    }
+</script>
+</body>
+</html>
+
+
+
+    

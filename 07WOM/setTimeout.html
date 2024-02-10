@@ -9,6 +9,7 @@
 
     <p id="counter"></p>
     <p id="counter2"></p>
+    <p id="counter3"></p>
     <script>
         //asynchrous 
         // setTimeout(function,delay)
@@ -70,6 +71,19 @@
             },1000*i)
             
         }
+
+        // Countdown from 5 to 1
+for (let i = 5; i >= 1; i--) {
+    setTimeout(function() {
+        console.log(i);
+        counter3.innerText=i
+        if (i === 1) {
+            console.log("Happy New Year!");
+            counter3.innerText="Happy New Year"
+        }
+    }, (5 - i) * 1000); // Delay in milliseconds: 0s, 1s, 2s, 3s, 4s
+}
+
 
 
 
