@@ -17,7 +17,7 @@
         // 3000 ms
         console.log("Hi, Hello")
 
-        //setTimeout(timer1,3000)
+        setTimeout(timer1,3000)
         function timer1(){
             console.log("Timer1 function has called")
         }
@@ -25,27 +25,17 @@
         // arrow function
         console.log("Hi, Hello")
 
-        //setTimeout(()=>console.log("Timer 2 has been called"),4000)
+        setTimeout(()=>console.log("Timer 2 has been called"),4000)
 
         console.log("Hi, Hello")
 
-        // 1 to 10 11=> New Year
-        // for(var i=1;i<=11;i++){
-        //     setTimeout(()=>{
-        //         console.log(i)
-        //     if(i==11){
-        //         console.log("Happy New Year")
-        //     }
-        //     },1000*i)
-
-        // }
-
+ 
         let counter=document.getElementById('counter')
-        for(let i=1;i<=11;i++){
+        for(let i=1;i<=10;i++){
             setTimeout(()=>{
                 console.log(i)
                 counter.innerText=i
-                if(i==11){
+                if(i==10){
                 console.log("Happy Independenc Year")
                 counter.innerText="Happy Independence Year"
             }
@@ -55,25 +45,8 @@
         }
 
 
-        let counter2=document.getElementById('counter2')
-        for(let i=1;i<=5;i++){
-            // console.log(i)
-            
-            setTimeout(()=>{
-                if(i<5){
-                console.log(i)
-                counter2.innerText=i
-                }else{
-                console.log("Happy New Year")
-                counter2.innerText="Happy New Year"
-            }
-
-            },1000*i)
-            
-        }
-
-        // Countdown from 5 to 1
-for (let i = 5; i >= 1; i--) {
+// Countdown from 5 to 1
+for (let i = 6; i >= 1; i--) {
     setTimeout(function() {
         console.log(i);
         counter3.innerText=i
@@ -81,11 +54,17 @@ for (let i = 5; i >= 1; i--) {
             console.log("Happy New Year!");
             counter3.innerText="Happy New Year"
         }
-    }, (5 - i) * 1000); // Delay in milliseconds: 0s, 1s, 2s, 3s, 4s
+    }, (6 - i) * 1000); // Delay in milliseconds: 0s, 1s, 2s, 3s, 4s
 }
 
 
-
+let count=0;
+setTimeout(()=>{
+    count++;
+    console.log("Count is",count)
+}
+    ,6000)
+    // console.log("Count is",count)
 
     </script>
 </body>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height: 100px;
+            width: 100px;
+            background-color: red;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="test"></div>
+    <button onclick="stopAnim()">Stop Animation</button>
+    <script>
+        var id=setTimeout(anim,5000)
+        function anim(){
+            console.log("anim")
+            let divSize=document.getElementById('test')
+            console.log(divSize)
+            divSize.style.backgroundColor="yellow";
+            divSize.style.width="200px"
+        }
+        //clearTimeout(setTimeout)
+
+        function stopAnim(){
+            console.log("stop")
+            clearTimeout(id)
+
+            let ptext=document.createElement('p')
+            ptext.innerText="Animation Stooped"
+            document.body.append(ptext)
+        }
+
+     
+    </script>
+</body>
+</html>

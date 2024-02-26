@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        callback
+        promises
+        fetch || async and await 
+        crud using mock api
+    -->
+
+
+    <!-- callback
+        > function inside a function.
+        > subfunction is dependant on mainfunction. 
+    
+    -->
+    <script>
+        // 2 examples
+        setTimeout(()=>{},1000)
+        setInterval(()=>{},1000)
+        document.addEventListener('',()=>{})
+        // Array Methods
+        // let array;
+        // array.map(()=>{})
+
+        // Nested Function
+
+        function function2(){
+            console.log(1)
+        }
+
+        function function1(){
+            console.log(2)
+            function2()
+        }
+        function1()
+
+        //callstack
+        //eventlopp
+        //webapi > browsers super power
+        //settimeout 
+
+        //http://latentflip.com/loupe/?code=JC5vbignYnV0dG9uJywgJ2NsaWNrJywgZnVuY3Rpb24gb25DbGljaygpIHsKICAgIHNldFRpbWVvdXQoZnVuY3Rpb24gdGltZXIoKSB7CiAgICAgICAgY29uc29sZS5sb2coJ1lvdSBjbGlja2VkIHRoZSBidXR0b24hJyk7ICAgIAogICAgfSwgMjAwMCk7Cn0pOwoKY29uc29sZS5sb2coIkhpISIpOwoKc2V0VGltZW91dChmdW5jdGlvbiB0aW1lb3V0KCkgewogICAgY29uc29sZS5sb2coIkNsaWNrIHRoZSBidXR0b24hIik7Cn0sIDUwMDApOwoKY29uc29sZS5sb2coIldlbGNvbWUgdG8gbG91cGUuIik7!!!PGJ1dHRvbj5DbGljayBtZSE8L2J1dHRvbj4%3D
+
+
+        function subfunction(){
+            console.log("Subfunction is called")
+        }
+
+        function mainfunction(callback){
+            console.log("Main function is called")    
+            callback()      
+        }
+        mainfunction(subfunction)
+
+
+        // can you display your name  > pass a parameter.
+        function subfunction1(fname,lastname){
+            // firstname+lastname
+            console.log("Subfunction is called",fname,lastname)
+        }
+
+        function mainfunction1(firstname,callback){
+            console.log("Main function is called",firstname)    
+            callback(firstname,"Kohli")      
+        }
+        mainfunction1("Gungun",subfunction1)//firstname
+
+        //another example
+        function displayres(total){
+            console.log(`Total is ${total}`)
+        }
+
+        function sum(callback,a,b){
+            var sum=a+b
+            callback(sum)
+        }
+        sum(displayres,2,4)
+
+        // callback_xml
+        // o/p > callback
+
+    </script>
+</body>
+</html>
