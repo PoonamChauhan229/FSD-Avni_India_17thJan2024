@@ -17,6 +17,7 @@
     <!-- callback
         > function inside a function.
         > subfunction is dependant on mainfunction. 
+        > args > function + receiving > paramater
     
     -->
     <script>
@@ -84,6 +85,24 @@
 
         // callback_xml
         // o/p > callback
+
+
+    
+
+    function displayCountriesData(jsonData){
+        console.log(jsonData)
+    }
+
+    function getCountriesData(callback){
+        var request=new XMLHttpRequest() // creating an XHR OBJECT > connect to server > via API
+        request.open('GET','https://restcountries.com/v2/all')
+        request.send()
+        request.onload=function(){
+            let data=JSON.parse(request.response)
+            callback(data)
+        }
+    }
+    getCountriesData(displayCountriesData)
 
     </script>
 </body>

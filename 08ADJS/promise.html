@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Promise > commitment || oath 
+        //Promise > Fulfil || Not Fulfilment
+        // 3 freineds > 4:00pm > eve   1  2  3
+        // Meet  || Not Meet || Dilema State(4:00pm)
+
+
+
+        // Coding 
+        // > Dilema State(4:00pm)==> Pending State
+        // > Meet State===> Fulfilled State ==>resolve ===> value as an output
+        // > Not Meet ===> Rejection State  ==>reject  ===> error in the console
+
+        // > Promise  returns an object
+        // represent {}
+        // create an object > new keyword
+        //Promise(()=>{})
+        console.log(1)
+
+        const p=new Promise(()=>{})
+        console.log(p)
+
+        const p1=new Promise((resolve,reject)=>{
+            resolve("Hey m there at restuarant")
+        })
+        console.log(p1)
+
+        const p2=new Promise((resolve,reject)=>{
+            reject("Hey wont be able to makeout")
+        })
+        console.log(p2)
+
+
+
+        const p3=new Promise((resolve,reject)=>{
+            resolve("p3 Hey m there at restuarant")      
+            reject("p3 Hey wont be able to makeout")
+        })
+        console.log(p3)
+
+        
+        const p4=new Promise((resolve,reject)=>{      
+            reject("p4 Hey wont be able to makeout")            
+            resolve("p4 Hey m there at restuarant")
+        })
+        console.log(p4)
+
+        // handle > consitional statement
+
+        const p5=new Promise((resolve,reject)=>{ 
+            if(false){  
+                resolve("p4 Hey m there at restuarant")  
+            }else{   
+                reject("p4 Hey wont be able to makeout")
+            }
+        })
+        console.log(p5)
+
+        //Enter the Age  from the user > Voting
+        // prompt
+        // age>18 resolve else reject
+
+        // let age=prompt("Enter the age")
+        let age=1;
+        console.log(age)
+
+        const p6=new Promise((resolve,reject)=>{ 
+            if(age>18){  
+                resolve("Elgible for Voting")  
+            }else{   
+                reject("Minor : Not Elgible for Voting")
+            }
+        })
+        console.log(p6)
+
+        // resolve > value  > .then() => cbk
+        // reject > error     .catch() => cbk
+        // both we need handle
+
+        p6.then(data=>console.log(data)).catch(err=>console.log(err))
+        p6.then(res=>console.log(res)).catch(error=>console.log(error))
+
+        console.log(1111)
+        // asyn ops
+        // fetch > promise + fetch > xml http request.
+
+        // xml _callback
+        // xml _promise
+
+
+
+
+
+
+    </script>
+</body>
+</html>
