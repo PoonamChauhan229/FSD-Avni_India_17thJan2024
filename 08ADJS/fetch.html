@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // fetch > XMLHTTP REQUEST
+      // console.log( fetch) > PROMISE
+      // > then() catch()
+      // fetch(url,{method , depending upon the method})
+      // GET > XML : GET || FETCH
+      let url = "https://restcountries.com/v2/all";
+      var req = fetch(url);
+      console.log(req); // promise
+      req
+        .then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+
+      // open weather map api
+      let apikey='b989f462963747f0f41ca6c6a3d2fcde'
+
+      let url2 =`https://api.openweathermap.org/data/2.5/weather?lat=33&lon=65&appid=${apikey}`;
+      console.log(url2);
+      let req2 = fetch(url2)
+      
+      req2.then((res) => res.json())
+        .then((data) => console.log(data))
+        .catch((err) => console.log(err));
+
+
+    // rest countries   > lat lon  get from here || latitide and longitude    
+    // open weather app > pass to the url of open weather app > corodinates : lat lon
+    </script>
+  </body>
+</html>
