@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 
+        CRUD OPERATION
+        
+        CREATE
+        READ
+        UPDATE
+        DELETE
+
+HELPER> HTTP METHODS
+
+GET METHOD    > RETRIVE THE DATA > READING THE DATA  >READ OPERATION
+POST METHOD   > ADDING THE DATA  >CHANGES IN SERVER  >CREATE OPERATION
+PUT METHOD    > UPDATE THE DATA  >CHANGES IN SERVER  >UPDATE OPERATION
+DELETE METHOD > REMOVE THE DATA  >CHANGES IN SERVER  >DELETE OPERATION
+
+FB PAGE
+READ other people
+
+POST + UPDATE + DELETE 
+
+
+MOCK API: FEEL LIKE OUR SERVER : CRUD OPERATION :: DOCUMENTATION
+
+https://mockapi.io
+
+-->
+    <script>
+       let url="https://652e7b520b8d8ddac0b1761f.mockapi.io/users"
+
+       //READ OPERATION > GET METHOD
+       async function getUsers(){
+        let res=await fetch(url)
+        let data=await res.json()
+        console.log(data)
+       }
+       getUsers()
+
+    //    https://652e7b520b8d8ddac0b1761f.mockapi.io/users/5
+        let userId=3
+       async function getSpecificUser(){
+        let res=await fetch(`${url}/${userId}`)
+        let data=await res.json()
+        console.log(data)
+       }
+       getSpecificUser()
+
+        //CREATE OPERATION > POST METHOD
+
+        async function createUser(){
+            // add some data to the server
+            let newUser={
+                    "name": "New User12",
+                    "email": "newuser1112@gmail.com"
+                    }
+        
+        let res=await fetch(url,{
+            method:"POST",
+            headers: {'content-type':'application/json'},
+            body:JSON.stringify(newUser)
+        })
+        // let data=await res.json()
+        // console.log(data)       
+
+        }
+        createUser()
+        // DELETE > ID
+        let deleteUserId=5
+        async function deleteUser(){
+            let res=await fetch(`${url}/${deleteUserId}`,{
+                method:"DELETE"
+            })
+
+            // let data=await res.json()
+            // console.log(data)   
+        }
+        deleteUser()
+
+    </script>
+</body>
+</html>
