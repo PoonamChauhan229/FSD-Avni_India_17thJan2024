@@ -82,7 +82,32 @@ https://mockapi.io
             // let data=await res.json()
             // console.log(data)   
         }
-        deleteUser()
+        //deleteUser()
+
+        // UPDATE METHOD:
+        // Avni lname > change/// id: 4
+
+        // 4 url >
+        let updateUserId=6
+        console.log(`${url}/${updateUserId}`)
+        console.log(url+"/"+updateUserId)
+        console.log(`https://652e7b520b8d8ddac0b1761f.mockapi.io/users/6`)
+        async function updateUser(){
+            let updatedUser={
+                name:"Avni",
+                email:"avni@gmail.com"
+            }
+            let res=await fetch(`${url}/${updateUserId}`,{
+                method:"PUT",
+                headers:{'content-type':'application/json'},
+                body:JSON.stringify(updatedUser)
+            })
+            let data=await res.json()
+            console.log(data) 
+        }
+        updateUser()
+
+
 
     </script>
 </body>
