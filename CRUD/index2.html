@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <thead>
+            <th>Name</th>
+            <th>Email</th>
+        </thead>
+        <tbody id="tbodyContainer">
+            <!-- 
+                tr
+                    td
+                    td
+                    td
+             -->
+
+        </tbody>
+    </table>
+
+    <script>
+        let url="https://652e7b520b8d8ddac0b1761f.mockapi.io/users";
+        let tbodyContainer=document.getElementById('tbodyContainer')
+        function createTableRow(val1,val2){
+            let tr=document.createElement('tr')
+            let td1=document.createElement('td')
+            let td2=document.createElement('td')
+
+            td1.innerHTML=val1
+            td2.innerHTML=val2
+
+            tr.append(td1,td2)
+            tbodyContainer.append(tr)   
+            }
+
+        // createTableRow("avni","avni@gmail.com")
+        // createTableRow("poonam","poonam@gmail.com")
+
+
+        async function createUser(){
+            // add some data to the server
+            let newUser={
+                    "name": "New User12",
+                    "email": "newuser1112@gmail.com"
+                    }
+        
+        let res=await fetch(url,{
+            method:"POST",
+            headers: {'content-type':'application/json'},
+            body:JSON.stringify(newUser)
+        })
+        
+        let data=await res.json()
+        console.log(data.name)       
+        
+            createTableRow(data.name,data.email)
+        }
+        createUser()
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
