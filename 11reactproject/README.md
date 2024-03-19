@@ -1,8 +1,39 @@
-# React + Vite
+//JSX > JAVASCRIPT XML > 
+//HTML Like SYNTAX we are using
+//YOU WANT TO USE JS INSDE HTML > {}
+//HTML
+//Components> Building block
+//Functional Component
+//Class Component 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+//Functional componnet
+//file name & functionname is 99% same
+//return statement
+// return 1 JSX > React.Fragment <>code....</>
+//export the file > in other place u can import it
 
-Currently, two official plugins are available:
+// named 
+// >export const function functionname(){return(<> JSX code....</>)}
+// > import {functionname} from './path'
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+// default 
+// >function functionname(){return(<> JSX code....</>)} export default functioname
+// > import functionname from './path'
+// Create the files strating with a capital letter > import becomes easy for us
+
+
+function functioname(){
+  return(
+    <>
+    
+    </>
+
+  )
+
+}
+export default functioname
+
+// Components Folder
+// src folder> Componnets
+src/Components
