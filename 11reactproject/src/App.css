@@ -1,0 +1,22 @@
+.border{
+    border:1px solid black;
+    width:190px;
+    margin:7px;
+    height: 260px;
+}
+.profile-pic{
+    width: 190px;
+    height: 200px;
+}
+.App{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    /* border:1px solid red; */
+    margin: auto;
+    width:96.5%;
+}
+*{
+    margin:0;
+    padding:0;
+}
