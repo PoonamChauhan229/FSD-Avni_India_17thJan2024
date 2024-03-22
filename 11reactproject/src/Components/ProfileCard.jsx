@@ -1,7 +1,7 @@
 function ProfileCard(props){
-    // console.log(props)
-    console.log(props.image)
-    console.log(props.name)
+    // console.log(props)// object
+    // console.log(props.image)
+    // console.log(props.name)
     return(
         <>
         {/* <div className="border">
@@ -11,9 +11,9 @@ function ProfileCard(props){
         </div> */}
 
         <div className="border">
-        <img className='profile-pic'src={props.image} alt="" />
-        <h2>Welcome {props.name}</h2>
-        <h3>NickName: {props.nickname}</h3>
+            <img className='profile-pic'src={props.image} alt="" />
+            <h2>Welcome {props.name}</h2>
+            <h3>NickName: {props.nickname}</h3>
         </div>
         </>
     )
@@ -29,3 +29,5 @@ export default ProfileCard;
 // attribute ={"attribute value"}// args
 
 // React > Properties > Props 
+
+// reusabilty
