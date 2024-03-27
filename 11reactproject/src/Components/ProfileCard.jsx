@@ -1,8 +1,23 @@
+import { useState } from "react";
+
 function ProfileCard(props){
     // console.log(props)// object
     // console.log(props.image)
     // console.log(props.name)
-    return(
+    // time taken to complete 1 card
+    // 4 min , using ajs varaible
+
+    // like and disike button
+    // create as an compoent
+    const [time,setTime]=useState(5)
+    const [btnName,setBtnName]=useState("Given")
+    const myStyle={
+        padding:"4px",
+        color:"blue",
+        backgroundColor:"pink",
+        marginTop:"2px"
+    }
+     return(
         <>
         {/* <div className="border">
             <img className='profile-pic'src="https://www.pngitem.com/pimgs/m/404-4042710_circle-profile-picture-png-transparent-png.png" alt="" />
@@ -12,8 +27,24 @@ function ProfileCard(props){
 
         <div className="border">
             <img className='profile-pic'src={props.image} alt="" />
-            <h2>Welcome {props.name}</h2>
-            <h3>NickName: {props.nickname}</h3>
+            <h3 style={myStyle}>Welcome {props.name}</h3>
+            {/* inline css in react */}
+            {/*
+             style={{marginRight:"10px"}}
+            // object 
+            document.style.marginRight="value"
+            // margin-right:"10px"; color:"red"
+            // {marginRight:"10px"}
+            
+            
+            */}
+            <h4 style={{color:"orange",marginBottom:"5px",marginTop:"4px"}}>NickName: {props.nickname}</h4>
+            <h4 style={myStyle}>Time {btnName}:{time} mins</h4>
+            <button style={myStyle} onClick={()=>{
+                // time+10
+                setTime(time+10)
+                setBtnName("Taken")
+                }}>Update Time</button>
         </div>
         </>
     )
