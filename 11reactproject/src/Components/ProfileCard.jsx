@@ -16,6 +16,7 @@ function ProfileCard(props){
     //ternary operator> conditional rendering
     // (condition)?"truevalue":"falsevale"
     const [show,setShow]=useState(false)
+    const [showSummary,setShowSummary]=useState(false)
     const [time,setTime]=useState(5)
     const [btnName,setBtnName]=useState("")
     const myStyle={
@@ -76,6 +77,14 @@ function ProfileCard(props){
                 setShow(true)
                 console.log(show)
                 }}>Update Time</button>
+                <p></p>
+            <button onClick={()=>
+                {
+                    setShowSummary(!showSummary)
+                    console.log(showSummary)
+                    }}>{showSummary?"💚":"💛"}</button>
+            <p></p>
+            {showSummary && <span>Lorem ipsum dolor sit amet.</span>}
         </div>
         </>
     )

@@ -1,16 +1,16 @@
 import './App.css'
+import AddColor from './Components/AddColor'
 import Display from './Components/Display'
 
 function App() {
 
   return (
     <>
-    <div className='App'>
-     
+    <div className='App'>   
+        {/* <Display/> */}
     
-    <Display/>
-   
      </div>
+     <AddColor/>
      </>
    
         
