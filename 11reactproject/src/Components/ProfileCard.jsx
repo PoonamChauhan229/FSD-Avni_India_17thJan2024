@@ -91,7 +91,7 @@ function ProfileCard(props){
 }
 export default ProfileCard;
 //class for styling
-//class="" || Classes are the reserved keyword ||OOPS> class classname
+//className="" || Classes are the reserved keyword ||OOPS> class classname
 //className=""
 //params and args is js 
 //user dependent > args > recive > params> display
