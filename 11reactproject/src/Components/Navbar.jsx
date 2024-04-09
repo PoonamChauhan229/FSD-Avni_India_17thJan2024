@@ -16,6 +16,12 @@ const Navbar = () => {
             <Link to='/' className="nav-link active">Home-Movies</Link>
         </li>
         <li className="nav-item">
+            <Link to='/thriller' className="nav-link active">Thriller</Link>
+        </li>
+        <li className="nav-item">
+            <Link to='/drama' className="nav-link active">Drama</Link>
+        </li>
+        <li className="nav-item">
             {/* Loading the page > Not behaviour of SPA */}
           {/* <a className="nav-link active" aria-current="page" href="/addcolor">Add Color-Anchor</a> */}
           <Link to='/addcolor' className="nav-link active">Add Color</Link>
