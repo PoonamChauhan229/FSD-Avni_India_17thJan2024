@@ -10,6 +10,7 @@ import MovieList from './Components/MovieList';
 import Thriller from './Components/Thriller';
 import Drama from './Components/Drama';
 import Page404 from './Components/Page404';
+import MovieDetails from './Components/MovieDetails';
 function App() {
 
   return (
@@ -28,7 +29,7 @@ function App() {
 
       <Route path='/colorgame' element={<AddColor/>}/>
       <Route path='/addcolor' element={<Navigate replace to ='/colorgame'/>}/>
-
+      <Route path='/movie/:id' element={<MovieDetails/>}/>
 
     {/* 404 */}
     <Route path ='*' element={<Page404/>}/>

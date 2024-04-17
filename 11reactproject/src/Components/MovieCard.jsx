@@ -1,8 +1,12 @@
 import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 
-const MovieCard = ({name,poster,rating,summary,glimpse,director,year,cast,genre}) => {
+const MovieCard = ({name,poster,rating,summary,glimpse,director,year,cast,genre,id}) => {
+    console.log(id)
     const [actor1,actor2]=cast
     const [show,setShow]=useState(false)
+    // useNavigate
+    const navigate=useNavigate()
     return (
         <div>
             <div className="card" style={{width: "22rem"}}>
@@ -15,7 +19,10 @@ const MovieCard = ({name,poster,rating,summary,glimpse,director,year,cast,genre}
                         onClick={()=>setShow(!show)}
                     ></h5>
                     {/* video> glimpse */}
-                    <h5 className="bi bi-info-circle-fill me-1 text-primary"></h5>
+                    <h5 className="bi bi-info-circle-fill me-1 text-primary"
+                    onClick={()=>{navigate(`/movie/${id}`)}}
+                    ></h5>
+
                     </div>                   
                     <h5 className="card-title">{rating}</h5>
                    </div>
